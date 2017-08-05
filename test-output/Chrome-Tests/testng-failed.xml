@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" verbose="5" name="Failed suite [Chrome-Tests]">
+  <parameter name="environment" value="stage"/>
+  <parameter name="port" value="4444"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ipAddress" value="localhost"/>
+  <parameter name="user" value="user2"/>
+  <listeners>
+    <listener class-name="utils.ScreenshotOnFailure"/>
+  </listeners>
+  <test name="Test I(failed)">
+    <parameter name="environment" value="stage"/>
+    <parameter name="port" value="4444"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="ipAddress" value="localhost"/>
+    <parameter name="user" value="user1"/>
+    <classes>
+      <class name="tests.FlightBookedConfirmtion">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="prepareSuiteForTesting"/>
+        </methods>
+      </class> <!-- tests.FlightBookedConfirmtion -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="isUserLoggedIn"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Test I(failed) -->
+  <test name="Test II(failed)">
+    <parameter name="environment" value="stage"/>
+    <parameter name="port" value="4444"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="ipAddress" value="localhost"/>
+    <parameter name="user" value="user2"/>
+    <classes>
+      <class name="tests.FlightBookedConfirmtion">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="isLoadTestTutorialDownloadable"/>
+          <include name="isUserLoggedIn"/>
+          <include name="prepareSuiteForTesting"/>
+        </methods>
+      </class> <!-- tests.FlightBookedConfirmtion -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Test II(failed) -->
+</suite> <!-- Failed suite [Chrome-Tests] -->

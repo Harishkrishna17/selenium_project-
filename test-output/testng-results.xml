@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[Load testing page title: Find a Flight: Mercury Tours:]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfull login: Find a Flight: Mercury Tours:]]>
+    </line>
+    <line>
+      <![CDATA[Flight Confirmation: Flight Confirmation: Mercury Tours]]>
+    </line>
+  </reporter-output>
+  <suite name="Firefox-Tests" duration-ms="30519" started-at="2017-07-07T01:48:44Z" finished-at="2017-07-07T01:49:15Z">
+    <groups>
+    </groups>
+    <test name="Test I" duration-ms="13092" started-at="2017-07-07T01:48:44Z" finished-at="2017-07-07T01:48:57Z">
+      <class name="tests.LoginTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@224edc67]" name="beforeTest" is-config="true" duration-ms="12128" started-at="2017-07-07T07:18:45Z" finished-at="2017-07-07T07:18:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4444]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[stage]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="isUserLoggedIn()[pri:0, instance:tests.LoginTest@224edc67]" name="isUserLoggedIn" duration-ms="66" started-at="2017-07-07T07:18:57Z" finished-at="2017-07-07T07:18:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Load testing page title: Find a Flight: Mercury Tours:]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- isUserLoggedIn -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:tests.LoginTest@224edc67]" name="afterSuite" is-config="true" duration-ms="632" started-at="2017-07-07T07:18:57Z" finished-at="2017-07-07T07:18:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Test I -->
+    <test name="Test II" duration-ms="17327" started-at="2017-07-07T01:48:57Z" finished-at="2017-07-07T01:49:15Z">
+      <class name="tests.FlightBookedConfirmtion">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.FlightBookedConfirmtion@3f49dace]" name="beforeTest" is-config="true" duration-ms="11954" started-at="2017-07-07T07:18:57Z" finished-at="2017-07-07T07:19:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4444]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[stage]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="isUserLoggedIn()[pri:0, instance:tests.FlightBookedConfirmtion@3f49dace]" name="isUserLoggedIn" duration-ms="80" started-at="2017-07-07T07:19:09Z" finished-at="2017-07-07T07:19:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Sucessfull login: Find a Flight: Mercury Tours:]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- isUserLoggedIn -->
+        <test-method status="PASS" signature="isLoadTestTutorialDownloadable()[pri:0, instance:tests.FlightBookedConfirmtion@3f49dace]" name="isLoadTestTutorialDownloadable" duration-ms="4703" started-at="2017-07-07T07:19:10Z" depends-on-methods="tests.FlightBookedConfirmtion.isUserLoggedIn" finished-at="2017-07-07T07:19:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Flight Confirmation: Flight Confirmation: Mercury Tours]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- isLoadTestTutorialDownloadable -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:tests.FlightBookedConfirmtion@3f49dace]" name="afterSuite" is-config="true" duration-ms="572" started-at="2017-07-07T07:19:14Z" finished-at="2017-07-07T07:19:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tests.FlightBookedConfirmtion -->
+    </test> <!-- Test II -->
+  </suite> <!-- Firefox-Tests -->
+</testng-results>
